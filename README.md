@@ -6,20 +6,22 @@ You will need:
 -feature code for the data you want. they are:
                     
 		
-Snow Water Equivalent	In	          WTEQ
+| Element                    | Unit | Ecode |
+|----------------------------|------|-------|
+|                            |      |       |
+| Snow Water Equivalent      | In   | WTEQ  |
+|                            |      |       |
+| Precipitation Accumulation | In   | PREC  |
+| Air Temperature Observed   | Degc | TOBS  |
+| Air Temperature Maximum    | Degc | TMAX  |
+| Air Temperature Minimum    | Degc | TMIN  |
+| Air Temperature Average    | Degc | TAVG  |
+| Snow Depth                 | In   | SNWD  |
+| Battery Maximum            | Volt | BATX  |
+| Battery                    | Volt | BATT  |
+| Battery Minimum            | Volt | BATN  |
 
-Precipitation Accumulation	In	    PREC
-
-Air Temperature Observed	Degc	    TOBS
-Air Temperature Maximum	Degc	      TMAX
-Air Temperature Minimum	Degc	      TMIN
-Air Temperature Average	Degc	      TAVG
-Snow Depth	In	                    SNWD
-Battery Maximum	Volt	              BATX
-
-Battery	Volt	                      BATT
-
-Battery Minimum	Volt	              BATN
 
 
-
+Debugging: 
+The size of the header on the csv depends on the number of features you export, so you may need to tweak it for the csv to read propoerly.
