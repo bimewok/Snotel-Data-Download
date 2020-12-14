@@ -10,6 +10,7 @@ end_date = '04-12-2020'
 start_date = '04-01-2020'
 filepath = r'C:\Ben\DATA'
 features = r'/WTEQ::value,PRCP::value,TMAX::value,TMIN::value'
+#the header is set for these particular fields. If you change the number of fields you may need to set the header to match the .csv's
 header = 56
 
 
