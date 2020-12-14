@@ -10,13 +10,13 @@ end_date = '04-12-2020'
 start_date = '04-01-2020'
 filepath = r'C:\Ben\DATA'
 features = r'/WTEQ::value,PRCP::value,TMAX::value,TMIN::value'
+header = 56
 
 
 
 
 
-
-def get_data(stations, end_date, start_date, filepath, features):
+def get_data(stations, end_date, start_date, filepath, features, header):
     #parse dates
     sd = datetime.datetime.strptime(start_date, '%m-%d-%Y')
     ed = datetime.datetime.strptime(end_date, '%m-%d-%Y')
@@ -43,7 +43,7 @@ def get_data(stations, end_date, start_date, filepath, features):
         open(path, 'wb').write(file.content)
         print('finished getting '+str(i))
         station = copy.copy(str(i)[:3])
-        i = pd.read_csv(path, header=56)
+        i = pd.read_csv(path, header=header)
         
         i.columns = [str(col) + str(station) for col in i.columns]
         i['Date'] = pd.to_datetime(i['Date'+str(station)])
