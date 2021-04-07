@@ -24,4 +24,5 @@ You will need:
 
 
 Debugging: 
-The size of the header on the csv depends on the number of features you export, so you may need to tweak it for the csv to read propoerly.
+The size of the header on the csv depends on the number of features you export, so you may need to tweak it for the csv to read properly.
+
